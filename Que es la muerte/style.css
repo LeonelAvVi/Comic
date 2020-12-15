@@ -1,0 +1,454 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*loading*/
+.oculto{
+    overflow: hidden;
+}
+.centrado{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+     z-index: 11000;
+     background-color:#00aeef;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     top: 0;
+     flex-direction: column;
+}
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 16px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 16px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 48px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 96px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(48px, 0);
+    }
+  }
+.bebeI{
+    object-fit: fill;
+    position: fixed;
+    z-index: 2000;
+    top: 46%;
+    left: 14.5%;
+    width: 13%;
+
+    -webkit-transition-property:left top transform -webkit-transform color;
+            -webkit-transition-duration: 2s;
+            transition-property:left top transform -webkit-transform color;
+            transition-duration: 2s;
+}
+.bebeF{
+    object-fit: fill;
+    position: fixed;
+    z-index: 2000;
+    top: 42%;
+    left: 17%;
+    width: 13%;
+
+    -webkit-transition-property:left top transform -webkit-transform color;
+            -webkit-transition-duration: 2s;
+            transition-property:left top transform -webkit-transform color;
+            transition-duration: 2s;
+}
+.floresEspiral{
+    
+    object-fit: fill; position:fixed; z-index: 2000;
+     top: 2.5%;left:23.5%;width: 18.5%;
+
+  
+}
+.espiral{
+    
+    object-fit: fill; position:fixed; z-index: 1001;
+    top: 16%;
+    left: 30.5%;
+    width: 8%;
+
+    animation: 2s mymove infinite linear;
+    animation-direction: reverse;
+}
+@keyframes mymove {
+    to { transform: rotate(360deg); }
+ }
+
+.floresBack{
+    
+    object-fit: fill; position:fixed; z-index: 1001;
+    top: 61%;
+    left: 36%;
+    width: 22%;
+}
+.iluminacion{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1500;
+    top: 9.3%;
+    left: 44.43%;
+    width: 16.3%;
+    -webkit-transition-property: left top transform -webkit-transform opacity;
+    -webkit-transition-duration: 3s;
+    transition-property: left top transform -webkit-transform opacity;
+    transition-duration: 3s;
+    opacity: 0;
+}
+.iluminacionF{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1500;
+    top: 9.3%;
+    left: 44.43%;
+    width: 16.3%;
+    -webkit-transition-property: left top transform -webkit-transform opacity;
+    -webkit-transition-duration: 3s;
+    transition-property: left top transform -webkit-transform opacity;
+    transition-duration: 3s;
+    opacity: 1;
+}
+.abuela{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1500;
+    top: 15%;
+    left: 62%;
+    width: 16%;
+}
+
+.floresIzq{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1000;
+    top: 5%;
+    left: 62%;
+    width: 5.5%;
+    -ms-transform: rotate(-35deg); /* IE 9 */
+    transform: rotate(-35deg);
+    transform-origin: 100% 75%;
+    -webkit-transition-property: left top transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property: left top transform -webkit-transform color;
+    transition-duration: 3s;
+
+}
+.floresDer{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1000;
+    top: 5%;
+    left: 71.5%;
+    width: 5.5%;
+    -ms-transform: rotate(35deg); /* IE 9 */
+    transform: rotate(35deg);
+    transform-origin: -15px 75%;
+    -webkit-transition-property: left top transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property: left top transform -webkit-transform color;
+    transition-duration: 3s;
+}
+
+.floresIzqF{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1000;
+    top: 5%;
+    left: 62%;
+    width: 5.5%;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg);
+    transform-origin: 100% 75%;
+    -webkit-transition-property: left top transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property: left top transform -webkit-transform color;
+    transition-duration: 3s;
+
+}
+.floresDerF{
+    object-fit: fill;
+    position: fixed;
+    z-index: 1000;
+    top: 5%;
+    left: 71.5%;
+    width: 5.5%;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    transform: rotate(0deg);
+    transform-origin: -15px 75%;
+    -webkit-transition-property: left top transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property: left top transform -webkit-transform color;
+    transition-duration: 3s;
+}
+#container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+#container .contendor{
+    content: '';
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.contendor .back{
+  height:100%;
+  object-fit: fill;
+  z-index: 1000;
+}
+.scale{
+    width:30%;
+    object-fit: cover; 
+    position: fixed; 
+    left:145%; 
+    top: 10%;
+   
+}
+.first{
+    width:1%;
+    object-fit: cover; 
+    position: fixed; 
+    left:145%; 
+    top: 10%; 
+    transition: width 2s;
+}
+
+.parrafo1HomeF{
+    object-fit: fill; position:fixed; z-index: 2000; top: 29%;left:11%;width: 10%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo1Home{
+    object-fit: fill; position:fixed; z-index: 2000; top: 29%;left:11%;width: 10%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo1I{
+    object-fit: fill; position:fixed; z-index: 2000; top: 24%;left:23%;width: 5%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo1F{
+    object-fit: fill; position:fixed; z-index: 2000; top: 24%;left:23%;width: 5%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+
+.background{
+    object-fit: fill; position:fixed; z-index: 3000; top: 0%;left:26.67%;width: 22.05%;height: 100vh;;background-color: black;opacity: 0.75;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 3s;
+}
+
+.backgroundF{
+    object-fit: fill; position:fixed; z-index: 3000; top: 0%;left:26.67%;width: 22.05%;height: 100vh;;background-color: black;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 3s;
+}
+
+.backFinal{
+    object-fit: fill; position:fixed; z-index: 12; top: 0%;left:60%;width: 34.8%;height: 100vh;;background-color: black;opacity: 0.75;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 3s;
+}
+
+.backFinalF{
+    object-fit: fill; position:fixed; z-index: 12; top: 0%;left:60%;width: 34.8%;height: 100vh;;background-color: black;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 3s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 3s;
+}
+
+.parrafo2I{
+    object-fit: fill; position:fixed; z-index: 2000; top: 52%;left:27.5%;width: 6%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo2F{
+    object-fit: fill; position:fixed; z-index: 2000; top: 52%;left:27.5%;width: 6%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+
+.parrafo3I{
+    object-fit: fill; position:fixed; z-index: 2000; top: 70%;left:33.8%;width: 2%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo3F{
+    object-fit: fill; position:fixed; z-index: 2000; top: 70%;left:33.8%;width: 2%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+
+.parrafo4I{
+    object-fit: fill; position:fixed; z-index: 2100; top: 73%;left:36%;width: 8%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo4F{
+    object-fit: fill; position:fixed; z-index: 2100; top: 73%;left:36%;width: 8%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+
+.parrafo5I{
+    object-fit: fill; position:fixed; z-index: 2000; top: 17%;left:51.5%;width: 9%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 3.5s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 3.5s;
+}
+.parrafo5F{
+    object-fit: fill; position:fixed; z-index: 2000; top: 17%;left:51.5%;width: 9%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 3.5ss;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 3.5ss;
+}
+.parrafo6I{
+    object-fit: fill; position:fixed; z-index: 2000; top: 81%;left:65%;width: 9%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo6F{
+    object-fit: fill; position:fixed; z-index: 2000; top: 81%;left:65%;width: 9%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo7I{
+    object-fit: fill; position:fixed; z-index: 2000; top: 0%;left:78.4%;width: 18.6%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.parrafo7F{
+    object-fit: fill; position:fixed; z-index: 2000; top: 0%;left:78.4%;width: 18.6%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.logoI{
+    object-fit: fill; position:fixed; z-index: 2000; top: 39%;left:100%;width: 6%;opacity: 0;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+.logoF{
+    object-fit: fill; position:fixed; z-index: 2000; top: 39%;left:100%;width: 6%;opacity: 1;
+
+    -webkit-transition-property:opacity transform -webkit-transform color;
+    -webkit-transition-duration: 2s;
+    transition-property:left top transform -webkit-transform color;
+    transition-duration: 2s;
+}
+
+@media (max-width: 991.98px) { 
+    .noMobile{
+        width: 100%;height: 100vh;position: fixed; z-index: 11000;background-color: black;opacity: 1;overflow-y: hidden;display: flex;justify-content: center;align-items: center;
+    }
+
+ }

@@ -1,0 +1,2 @@
+Color Fondo Escena 04 #15192b
+Color Fondo Texto Final #3d3d3d
